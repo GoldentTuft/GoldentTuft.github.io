@@ -1,0 +1,183 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  color: inherit;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  vertical-align: top;
+  list-style: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.2;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic Pro", "\30D2\30E9\30AE\30CE\89D2\30B4  Pro W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  font-feature-settings: "pkna";
+}
+
+code {
+  font-family: Consolas, "Courier New", Courier, Monaco, monospace;
+}
+
+html {
+  font-size: 16px;
+}
+.app__wrapper {
+  border: solid 2px #999;
+  border-radius: 0.4em;
+}
+
+.app__menu {
+  background-color: fuchsia;
+}
+.app__menu_brand {
+  font-size: 2rem;
+}
+.app__menu_item {
+  background-color: #c800c8;
+  font-size: 1.2rem;
+}
+
+.app__body {
+  background-color: #640064;
+}
+
+.app__main {
+  height: 100vh;
+  background-color: lime;
+}
+
+.app__content {
+  min-width: 80vw;
+  max-height: 80vh;
+  background-color: #646464;
+  word-break: break-all;
+}
+
+.app__footer {
+  font-size: 2em;
+}
+
+.app__sidebar {
+  background-color: #646400;
+}
+
+.app__border {
+  border: solid 1px rgba(0, 0, 0, 0.3);
+}
+
+.app__tab {
+  overflow: auto;
+}
+.app__tab_item {
+  font-size: 1.5em;
+  background-color: #9696c8;
+  min-width: 3em;
+  max-width: 9em;
+  overflow: hidden;
+  border: solid 1px rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+  border-radius: 0.4em 0.4em 0 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.app__tab_item__sel {
+  font-size: 1.5em;
+  background-color: #c8c8c8;
+  min-width: 3em;
+  max-width: 9em;
+  overflow: hidden;
+  border: solid 2px rgba(0, 0, 0, 0.3);
+  border-bottom: none;
+  border-radius: 0.4em 0.4em 0 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.app__dropDown {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.app__dropDown_items {
+  visibility: hidden;
+  position: absolute;
+  z-index: 3000;
+  background-color: #c8c8c8;
+}
+.app__dropDown_item {
+  z-index: 3000;
+  border: solid 2px #ae790f;
+  background-color: #c8c8c8;
+}
+
+.app__dropDown:hover .app__dropDown_items {
+  visibility: visible;
+}
+
+.app__childLeft {
+  right: 100%;
+}
+
+.app__childBottom {
+  top: 100%;
+}
+
+.app__childRight {
+  left: 100%;
+}
+
+.app__dropDownToggle {
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: 0;
+}
+.app__dropDownToggle_items {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  z-index: 3000;
+  background-color: #c8c8c8;
+}
+.app__dropDownToggle_item {
+  z-index: 3000;
+  background-color: #c8c8c8;
+}
+
+.app__dropDownToggle:focus .app__dropDownToggle_items {
+  visibility: visible;
+}
+
+.app__scrollAreaY {
+  overflow-y: auto;
+}
+
+.app__noScrollAreaY {
+  overflow-y: hidden;
+}
+
+@media screen and (max-width: 660px) {
+  .app__content {
+    max-height: 60vh;
+  }
+}
+
+/*# sourceMappingURL=/js.00a46daa.css.map */
