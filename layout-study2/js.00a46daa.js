@@ -11747,10 +11747,10 @@ var $author$project$Main$body = A2(
 						$author$project$Main$bodyGap,
 						A2(
 							$author$project$Main$setClass,
-							'scrollAreaY',
+							'content',
 							A2(
 								$author$project$Main$setClass,
-								'content',
+								'scrollAreaY',
 								$arowM$elm_neat_layout$Neat$Layout$column(
 									_List_fromArray(
 										[
@@ -12078,12 +12078,21 @@ var $author$project$Main$menu = function (model) {
 				_List_fromArray(
 					[
 						A2(
-						$arowM$elm_neat_layout$Neat$fromNoGap,
-						$author$project$Main$menuGap,
+						$arowM$elm_neat_layout$Neat$setLayout,
+						$arowM$elm_neat_layout$Neat$Layout$fill,
 						A2(
-							$author$project$Main$setClass,
-							'menu_brand',
-							$arowM$elm_neat_layout$Neat$textBlock('Brand'))),
+							$arowM$elm_neat_layout$Neat$fromNoGap,
+							$author$project$Main$menuGap,
+							A2(
+								$arowM$elm_neat_layout$Neat$setLayout,
+								$arowM$elm_neat_layout$Neat$Layout$fill,
+								A2(
+									$author$project$Main$setClass,
+									'menu_brand',
+									A2(
+										$arowM$elm_neat_layout$Neat$setLayout,
+										$arowM$elm_neat_layout$Neat$Layout$fill,
+										$arowM$elm_neat_layout$Neat$textBlock('Brand')))))),
 						A2(
 						$arowM$elm_neat_layout$Neat$setLayout,
 						$arowM$elm_neat_layout$Neat$Layout$fill,
@@ -12745,7 +12754,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52227" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55830" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

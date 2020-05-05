@@ -52,6 +52,7 @@ html {
 .app__main {
   height: 100vh;
   background-color: lime;
+  overflow: hidden;
 }
 
 .app__content {
